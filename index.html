@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='style.css'>
+    
+    <title>Webcam</title>
+</head>
+<body>
+    
+    <header>
+        <div class="main">
+            <img class="logo"src='logo.png'>
+            <h1>Web Camera</h1>
+        </div>
+    </header>
+
+    <div class=button-area>
+        <button id="btn-start" type="button" class="button">Start streaming</button>
+        <button id="btn-stop" type="button" class="button">Stop Streaming</button>
+    </div>
+    
+    <div class='camera'>
+        <video id="video" autoplay></video>
+        <button id="btn-captureSmall" type="button" class="button"></button>
+        <canvas id=canvas></canvas>
+    </div>
+
+    <div class="capture">
+        <button id="btn-capture" type="button" class="button"></button>
+        <button id="clear">clear</button>
+    </div>
+
+    <div class="filters">
+    <h2>Filters</h2>
+    
+        <div class="filter-button">
+            <button id="none">None</button>
+            <button id="combine-filter">Filter-1</button>
+            <button id="combine-filter2">Filter-2</button><br>
+            <button id='blur'>Blur</button>
+            <button id='brightness'>Brightness</button>
+            <button id='contrast'>Contrast</button><br>
+            <button id='saturate'>Saturate</button>
+            <button id='sepia'>Sepia</button>
+            <button id="drop-shadow">Drop-shadow</button><br>
+            <button id="greyScale">GreyScale</button>
+            <button id="hue-rotate">Hue-rotate</button>
+            <button id="opacity">opacity</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script async src="script.js"></script> 
+
+</body>
+</html>

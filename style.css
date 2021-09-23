@@ -1,0 +1,217 @@
+body {
+  background-image: linear-gradient(
+    rgba(126, 123, 123, 0.7),
+    rgba(207, 198, 198, 0.7)
+  );
+}
+#video {
+  height: auto;
+  width: 150%;
+  border: 1px solid black;
+  background-color: black;
+}
+#canvas {
+  height: auto;
+  width: 150%;
+  margin-left: 5%;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.logo {
+  width: 200px;
+  height: auto;
+}
+h1 {
+  font-weight: bolder;
+  font-size: 800%;
+  text-shadow: 2px 2px rgb(241, 174, 50);
+}
+.camera {
+  display: flex;
+  justify-content: space-around;
+}
+.button-area {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3em;
+}
+#btn-start {
+  height: 100%;
+  width: auto;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: normal;
+  background-color: green;
+  color: white;
+  border-radius: 5%;
+  padding: 2%;
+}
+#btn-stop {
+  height: 100%;
+  width: auto;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: normal;
+  background-color: rgb(219, 17, 17);
+  color: white;
+  border-radius: 5%;
+  padding: 2%;
+}
+#btn-start:hover {
+  background-color: white;
+  color: green;
+  border: 1px solid green;
+  transition: background-color 0.5s;
+  font-size: 20px;
+  font-weight: normal;
+}
+#btn-stop:hover {
+  background-color: white;
+  color: rgb(219, 17, 17);
+  border: 1px solid rgb(219, 17, 17);
+  transition: background-color 0.5s;
+  font-size: 20px;
+  font-weight: normal;
+}
+.capture {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1%;
+}
+#btn-capture,
+#btn-captureSmall {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgb(145, 137, 137);
+  background-color: orangered;
+  align-self: center;
+}
+#clear {
+  align-self: flex-end;
+  margin-left: 100px;
+  height: 40%;
+  width: 25%;
+  border: none;
+  margin-bottom: 10%;
+  font-size: 200%;
+  font-weight: normal;
+  background-color: grey;
+  color: white;
+  border-radius: 5%;
+  padding: 10px;
+}
+#clear:hover {
+  background-color: white;
+  color: grey;
+  border: 1px solid grey;
+  transition: background-color 0.5s;
+  font-size: 20px;
+  font-weight: normal;
+}
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  font-size: 500%;
+  font-weight: bolder;
+  text-shadow: 2px 2px rgb(241, 174, 50);
+}
+.filter-button > button {
+  margin: 10px;
+  height: 200%;
+  width: 8em;
+
+  font-size: 150%;
+  font-weight: normal;
+  border-radius: 5%;
+  background-color: rgb(255, 153, 0);
+  color: black;
+  border: 1px solid black;
+}
+.filter-button > button:hover {
+  transform: translateY(2px);
+  border: none;
+  box-shadow: 1px 2px rgb(61, 60, 60);
+  color: white;
+  opacity: 80%;
+}
+
+/*media quries*/
+@media all and (min-width: 1500px) {
+  #btn-captureSmall {
+    display: none;
+  }
+}
+@media all and (max-width: 1500px) {
+  h1 {
+    font-size: 500%;
+    margin: 0;
+  }
+  .camera {
+    display: flex;
+    flex-direction: column;
+  }
+  #video,
+  #canvas {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  #canvas {
+    margin-top: 10%;
+  }
+
+  body {
+    margin: 0;
+  }
+  .button-area {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+  }
+  #btn-start {
+    align-items: center;
+  }
+  #btn-capture {
+    display: none;
+  }
+  .clear {
+    width: 100%;
+  }
+  #clear {
+    width: 50%;
+  }
+  #btn-captureSmall,
+  #clear {
+    margin-top: 5%;
+  }
+  .filter-button {
+    text-align: center;
+  }
+}
+@media all and (max-width: 500px) {
+  #video,
+  #canvas {
+    margin: 0;
+    width: 110%;
+    height: auto;
+  }
+  #btn-captureSmall {
+    margin-bottom: 10%;
+  }
+  #clear {
+    width: 60%;
+  }
+}
